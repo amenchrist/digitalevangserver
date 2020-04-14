@@ -11,10 +11,10 @@ app.use(cors());
 const user = {
   name: "amenchrist",
   class: "developer",
-  level: 1
+  level: 2
 }
 
-app.get('/',(req, res) => res.send("Server connected Digital Evangelism"));
+app.get('/',(req, res) => res.send(user));
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 /*
